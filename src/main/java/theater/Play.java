@@ -7,8 +7,8 @@ public class Play {
      * @param name The name of the play.
      * @param type The genre of the play.
      */
-    private String name;
-    private String type;
+    private final String name;
+    private final String type;
 
     public Play(String name, String type) {
         this.name = name;

@@ -178,7 +178,7 @@ Hover — don't click — and a popup will appear mentioning what the problem is
 
 > The project stores information about CheckStyle in `.idea/checkstyle-idea.xml`.
 
-- [ ] **For each Java source file in `src/main/java/`, fix all CheckStyle issues that are detected.**
+- [x] **For each Java source file in `src/main/java/`, fix all CheckStyle issues that are detected.**
   You should either see the CheckStyle Tool Window icon (it looks like a pencil) on the left of IntelliJ or
   you may need to go to `View -> Tool Windows -> CheckStyle` to open the CheckStyle Tool Window.
   The following provides more about this step.
@@ -231,7 +231,7 @@ As highlighted already, the emphasis in this assignment is on the process of per
 refactoring. To document this process, you will also maintain a record of your git log in your
 repository.
 
-- [ ] Run the command `git log --oneline` in the terminal and copy+paste the output into
+- [x] Run the command `git log --oneline` in the terminal and copy+paste the output into
   the `log.txt` file to replace all of its contents.
   - Alternatively, make sure your terminal is open in your project directory,
     and you can run `git log --oneline > log.txt` to replace the contents of the `log.txt` file
@@ -239,7 +239,7 @@ repository.
 
 > **Important**: do this each time you are asked to commit your work in the remaining tasks.
 
-- [ ] Commit your changes to `log.txt` now; **include the string `Task 1.2` in your commit message.** 
+- [x] Commit your changes to `log.txt` now; **include the string `Task 1.2` in your commit message.** 
 
 > **Note:** this commit won't include the updated log with the most recent commit, which is fine.
 > The next time we ask you to commit, you'll update your `log.txt` file again and commit the updated log.
@@ -344,11 +344,14 @@ IntelliJ Documentation: [Extract Method](https://www.jetbrains.com/help/idea/ext
       a. Variable `play` is used twice in the method. Replace both of them with a call to the new helper `getPlay`.
  
       b. Now variable `play` is no longer used in the method body for `getAmount`.
-         Update your first helper method, along with your call to it, such that it only takes a `Performance` object as a parameter. In IntelliJ, use the `Refactor->Change Signature` refactoring and deleting the second parameter. Right-click on the method header to open the menu.
+         Update your first helper method, along with your call to it, such that it only takes a `Performance` object as a parameter. In IntelliJ, 
+         use the `Refactor->Change Signature` refactoring and deleting the second parameter. Right-click on the method header to open the menu.
    
    - That was big! Make sure the tests still run (`StatementPrinterTests`), and **commit your work**.
 
-5. The last step is to look back at how the result of our call to this helper is actually used in the `statement` method. It turns out we are storing the value in a local variable for convenience, but the code is arguably easier to understand if we again apply the `Inline Variable` refactoring. In IntelliJ, right-click the `thisAmount` variable and choose `Refactor -> Inline Variable`.
+5. The last step is to look back at how the result of our call to this helper is actually used in the `statement` method. It turns out we are storing the value in a local variable for convenience, 
+but the code is arguably easier to understand if we again apply the `Inline Variable` refactoring. In IntelliJ, right-click the `thisAmount` variable and choose `Refactor -> Inline Variable`.
+
 6. do the tests still run (`StatementPrinterTests`)?
 7. Update your `log.txt` file and commit your changes.
   Make sure to include the string `Task 2.1` in your commit message.
