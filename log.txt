@@ -1,4 +1,5 @@
-8286597 (HEAD -> main) Completed up to step 4. Hopefully didn't ruin anything.
+6e2ceea (HEAD -> main) Completed Task 2.1
+8286597 Completed up to step 4. Hopefully didn't ruin anything.
 f87192a (origin/main, origin/HEAD) Completed Task 1.2
 937d4b0 Completed Task 1.1
 e7b1432 Initial commit
