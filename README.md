@@ -413,7 +413,9 @@ Follow the steps below to refactor this part of the code.
    We're going to create a method that, given an amount, returns a `String` containing the amount of dollars in US currency. We'll move all that `NumberFormat` stuff inside there, too.
 
    There are two expressions we want to replace with a call to this new helper method.
-   Select the SECOND call to `NumberFormat.getCurrencyInstance(Locale.US).format` as well as the arguments to that call. (The first may not do the correct refactoring.) Perform an `Extract Method` refactoring and press Enter once done. You'll see that the helper takes an `int` as its parameter now and the division by `Constants.PERCENT_FACTOR` is performed within the helper. This is precisely what the textbook arrives at, but it takes a bit more manual work.
+   Select the SECOND call to `NumberFormat.getCurrencyInstance(Locale.US).format` as well as the arguments to that call. (The first may not do the correct refactoring.) 
+   Perform an `Extract Method` refactoring and press Enter once done. You'll see that the helper takes an `int` as its parameter now and the division by `Constants.PERCENT_FACTOR` is performed within the helper. 
+   This is precisely what the textbook arrives at, but it takes a bit more manual work.
 
    - Update the FIRST call to `NumberFormat.getCurrencyInstance(Locale.US).format` so that it calls our new helper.
 
