@@ -1,4 +1,5 @@
-11427e9 (HEAD -> main) Completed Task 2.3
+d334e39 (HEAD -> main) Completed Task 2.4
+11427e9 Completed Task 2.3
 b6de578 (origin/main, origin/HEAD) Completed Task 2.2
 6e2ceea Completed Task 2.1
 8286597 Completed up to step 4. Hopefully didn't ruin anything.

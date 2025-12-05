@@ -475,7 +475,8 @@ First, we will decouple the logic into three loops, then we will refactor using 
 ## Post Assignment Blurb
 
 At this point, we have done a substantial refactoring and can admire our progress!
-Our `statement` method is now just a handful of lines of code which are solely responsible for forming the string to be returned. All the actual computation is offloaded to our helper methods, and the code is much easier to understand at a glance.
+Our `statement` method is now just a handful of lines of code which are solely responsible for forming the string to be returned. 
+All the actual computation is offloaded to our helper methods, and the code is much easier to understand at a glance.
 
 For those interested, you can read more in the free textbook chapter, as the author says more
 about what we have accomplished so far with our refactoring.
